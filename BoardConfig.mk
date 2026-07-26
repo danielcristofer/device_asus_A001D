@@ -233,3 +233,7 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 #WIFI_DRIVER_MODULE_PATH := "/vendor/lib/modules/wlan.ko"
 WIFI_DRIVER_STATE_OFF := "OFF"
 WIFI_DRIVER_STATE_ON := "ON"
+
+# Disable vendor ramdisk kernel modules (not needed, all built-in)
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES :=
+BOARD_VENDOR_KERNEL_MODULES :=
