@@ -479,4 +479,13 @@ PRODUCT_COPY_FILES += \
 		$(LOCAL_PATH)/configs/wifi/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_wlan_nv.bin \
 		$(LOCAL_PATH)/configs/wifi/WCNSS_wlan_dictionary.dat:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_wlan_dictionary.dat
 
+# ASUS Snapdragon Camera
+PRODUCT_PACKAGES += SnapdragonCamera
 PRODUCT_COPY_FILES += \
+    vendor/asus/A001D/proprietary/priv-app/SnapdragonCamera/lib/arm64/libscene-native-lib.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SnapdragonCamera/lib/arm64/libscene-native-lib.so \
+    vendor/asus/A001D/proprietary/priv-app/SnapdragonCamera/lib/arm64/libarcsoft_panorama_burstcapture.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SnapdragonCamera/lib/arm64/libarcsoft_panorama_burstcapture.so \
+    vendor/asus/A001D/proprietary/priv-app/SnapdragonCamera/lib/arm64/libjni_burstpmk.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SnapdragonCamera/lib/arm64/libjni_burstpmk.so \
+    vendor/asus/A001D/proprietary/priv-app/SnapdragonCamera/lib/arm64/libmpbase.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SnapdragonCamera/lib/arm64/libmpbase.so \
+    vendor/asus/A001D/proprietary/priv-app/SnapdragonCamera/lib/arm64/libtensorflow_inference.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SnapdragonCamera/lib/arm64/libtensorflow_inference.so \
+    vendor/asus/A001D/proprietary/priv-app/SnapdragonCamera/oat/arm64/SnapdragonCamera.odex:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SnapdragonCamera/oat/arm64/SnapdragonCamera.odex \
+    vendor/asus/A001D/proprietary/priv-app/SnapdragonCamera/oat/arm64/SnapdragonCamera.vdex:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SnapdragonCamera/oat/arm64/SnapdragonCamera.vdex
