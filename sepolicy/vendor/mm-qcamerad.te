@@ -1,0 +1,9 @@
+# A001D: mm-qcamerad (CAM_AECAWB thread) needs access to camera_data_file
+# The QTI camera daemon accesses camera calibration data under a path labeled
+# camera_data_file. This is a Treble core_data_file_type, so we add the
+# data_between_core_and_vendor_violators typeattribute (same approach used
+# for vendor_init in this device tree).
+typeattribute mm-qcamerad data_between_core_and_vendor_violators;
+
+allow mm-qcamerad camera_data_file:dir search;
+allow mm-qcamerad camera_data_file:file r_file_perms;

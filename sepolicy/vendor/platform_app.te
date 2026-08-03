@@ -1,0 +1,2 @@
+# Allow platform_app (Snapcam) to read exported_camera_prop
+get_prop(platform_app, exported_camera_prop)
